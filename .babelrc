@@ -1,0 +1,23 @@
+{
+"plugins": [
+	["transform-class-properties", { "spec": true }],
+	["transform-es2015-destructuring"],
+	["transform-object-rest-spread", { "useBuiltIns": false }],
+	["react-hot-loader/babel"]
+
+],
+	"presets": [
+		["latest", {
+			"es2015": {
+				"modules": false
+			  },
+		  "targets": {
+			"browsers": ["last 2 versions"]
+		  },
+		  "debug": true,
+		  "useBuiltIns": false
+		}],
+		["react"]
+	  ]
+	  
+}
