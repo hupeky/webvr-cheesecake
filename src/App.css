@@ -2,12 +2,12 @@
   text-align: center;
 }
 
-.App-logo {
+.AppLogo {
   animation: App-logo-spin infinite 10s linear;
   height: 80px;
 }
 
-.App-header {
+.AppHeader {
   background-color: #222; 
   height: 150px;
   padding: 20px;
@@ -18,7 +18,7 @@
   font-size: 1.5em;
 }
 
-.App-intro {
+.AppIntro {
   font-size: large;
 }
 
@@ -34,3 +34,27 @@
 
 .red { color: red;}
 .reg { font-weight:normal;}
+
+.App button {
+  background-color: grey;
+  color: white;
+  font: inherit;
+  padding: 15px;
+  cursor: pointer;          
+}
+
+.App button:hover {background-color: yellow;  padding: 30px; }
+
+.App button.red {
+  background-color: red;  padding: 20px; 
+}
+
+.App button.red:hover {
+  background-color: salmon;  padding: 30px; 
+}
+
+.Embedded {
+    position: relative;
+  width:100%;
+  height:700px
+}

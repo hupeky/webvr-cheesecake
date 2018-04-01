@@ -1,41 +1,21 @@
 {
 "plugins": [
+	["react-css-modules", {
+		"webpackHotModuleReloading": true
+	}],
+	["react-hot-loader/babel"],
 	["transform-class-properties"],
 	["transform-es2015-destructuring"],
-	["transform-object-rest-spread"],
-	["react-hot-loader/babel"]
+	["transform-object-rest-spread"]
+
 
 ],
 "presets": [
-	["latest",{
-	"modules": false,
-	"es2015": {
-		"modules": false
-	  }}],["react"]]
-}
-
-/*
-"plugins": [
-	["transform-class-properties"],
-	["transform-es2015-destructuring"],
-	["transform-object-rest-spread"],
-	["react-hot-loader/babel"]
-
-],
-
-  "presets": [
-	["latest", {
-		"modules": false,
-		"es2015": {
-			"modules": false
-		  },
-	  "targets": {
-		"browsers": ["last 2 versions"]
-	  },
-	  "debug": true,
-	  "useBuiltIns": false
-	}],
-	["react"]
+    "react",
+    [ "env", {
+      "targets": {
+        "browsers": ["last 2 versions", "safari >= 7"]
+      }
+    }]
   ]
-  
-}*/
+}

@@ -1,0 +1,51 @@
+{
+  "extends": ["standard","plugin:react-app/recommended"], //"standard",    
+  
+  "plugins": [
+    "standard",
+    "react",
+    "promise"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+        "jsx": true
+    }
+  },
+
+  "rules": {
+    // first argument: 0 - silent, 1 - warning, 2 - error
+    "global-strict": 0,   // (deprecated) require or disallow the "use strict" pragma in the global scope (off by default in the node environment)
+    "no-extra-strict": 0, // (deprecated) disallow unnecessary use of "use strict"; when already in strict mode
+    "strict": 0,          // controls location of Use Strict Directives
+    "no-debugger":        2,
+    "brace-style": [
+        2,
+        "1tbs",
+        { "allowSingleLine": true }
+    ],        
+    "no-trailing-spaces": 1,
+    "keyword-spacing":    1,
+	"space-in-parens": ["error", "always", { "exceptions": ["{}"] }],
+    "spaced-comment":     [1, "always" ],
+    "vars-on-top":        1,
+    "no-undef":           1,
+    "no-undefined":       0,
+    "comma-dangle":       [ 1, "never" ],
+    "semi":               [ 1, "never" ],        
+    "guard-for-in":       1,
+    "no-eval":            1,
+    "no-with":            1,
+    "valid-typeof":       1,
+    "no-unused-vars":     1,
+    "no-continue":        1,
+    "no-extra-semi":      1,
+    "no-unreachable":     1,
+    "indent": ["warn", 4],
+    "no-unused-expressions": 1,
+    "react/prefer-es6-class": 1
+}
+  } 
+
+  
