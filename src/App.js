@@ -36,7 +36,7 @@ class App extends Component {
         this.setState({messageFromButton: newMessage, event: 'newEvent'})
     }
     onClick2Handler = () => {
-        this.setState({camHeight: Math.random() * 10 })
+        this.setState({camHeight: Math.random() * 10})
     }
 
     componentDidMount () {
@@ -50,10 +50,10 @@ class App extends Component {
         })
     }
 
-    updateAssetsLoadingInfo = ({assetLoaded, assetTotal, assetCurrentItem}) => {
-        this.setState({assetLoaded, assetTotal, assetCurrentItem})
+    updateAssetsLoadingInfo = ( {assetLoaded, assetTotal, assetCurrentItem} ) => {
+        this.setState({assetLoaded, assetTotal, assetCurrentItem} )
     }
-    updateAssetsCurrentInfo = ({assetCurrentLoadedBytes, assetCurrentTotalBytes}) => {
+    updateAssetsCurrentInfo = ( {assetCurrentLoadedBytes, assetCurrentTotalBytes}) => {
         this.setState({assetCurrentLoadedBytes, assetCurrentTotalBytes})
     }
     render () {
@@ -70,12 +70,12 @@ class App extends Component {
 
             CustomEvent.prototype = window.Event.prototype
             window.CustomEvent = CustomEvent
-        })()
+        } )()
 
         return (
             <div>
                 <div>
-                    <MenuBar button1Clicked={this.onClick1Handler} button2Clicked={this.onClick2Handler}/>
+                    <MenuBar button1Clicked={this.onClick1Handler} button2Clicked={this.onClick2Handler} />
                     <p>hello</p>
                     <Scene
                         light="defaultLightsEnabled: false"
@@ -92,7 +92,7 @@ class App extends Component {
                         <Entity primitive='a-sky' color="#000"></Entity>
                         <Camera height={this.state.camHeight} />
                         <Entity geometry={{primitive: 'box', width: 3}} material={{color: 'blue'}} position="0 5 -5" />
-                        <Cheesecake event={this.state.event} message={this.state.messageFromButton} id="CheesecakeEntity" log={`event:default; message: hello a message`} collada-model="#objCheesecakeDae" position="0 0 0" rotation="0 0 0"/>
+                        <Cheesecake event={this.state.event} message={this.state.messageFromButton} id="CheesecakeEntity" log={`event:default; message: hello a message`} collada-model="#objCheesecakeDae" position="0 0 0" rotation="0 0 0" />
                     </Scene>
                 </div>
             </div >

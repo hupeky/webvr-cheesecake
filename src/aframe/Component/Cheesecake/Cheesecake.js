@@ -1,4 +1,4 @@
-import AFRAME from 'aframe'
+import AFRAME, {THREE} from 'aframe'
 import 'babel-polyfill'
 import {Entity} from 'aframe-react'
 import React from 'react'
@@ -22,7 +22,6 @@ export default class Cheesecake extends React.Component {
                 this.eventHandlerFn = () => { console.log( 'hello' ) }
                 console.log( THREE )
                 this.el.addEventListener( 'model-loaded', function () {
-                    
                     console.log( 'loaded' )
                     const scene = self.el.sceneEl.object3D
                     console.log( 'scene', scene )
